@@ -64,7 +64,7 @@ def search_amazon_products(query: str, max_results=5):
     return results
 
 # 📷 Upload image and return top labels + Amazon results
-@app.post("/upload-image/")
+@app.post("/upload")
 async def upload_image(file: UploadFile = File(...)):
     contents = await file.read()
     image = Image.open(io.BytesIO(contents)).convert("RGB")
