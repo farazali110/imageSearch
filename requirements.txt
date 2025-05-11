@@ -5,3 +5,7 @@ transformers
 Pillow
 requests
 beautifulsoup4
+torch==2.1.0
+torchvision==0.15.1
+Pillow==9.4.0
+requests==2.32.3
